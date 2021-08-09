@@ -1,0 +1,91 @@
+.wrapper{
+  padding-block-start: 4.9rem;
+  padding-block-end: 4.9rem;
+  padding-inline-start: 4.9rem;
+  padding-inline-end: 4.9rem;
+}
+.header{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.table > tr > th{
+  padding: 10px;
+  background-color: var(--bg-card);
+}
+
+.table > tr > td{
+  padding: 10px;
+  border: 1px solid white;
+}
+.table > tr > td > p{
+  color: white;
+}
+
+.table{
+  /* width: 634px; */
+  /* max-width: 634px; */
+  min-width: 634px;
+  font-size: 1.8rem;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.table img{
+  width: 52px;
+}
+
+.table input[type=text]{
+  width: 28rem;
+  height: 4rem;
+  padding: 1rem;
+  max-width: 280px;
+  color: var(--txt-active);
+  background-color: var(--bg-card);
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 12px;
+}
+.button{
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  max-width: 280px;
+display: flex;
+justify-content: center;
+
+  color: var(--txt-active);
+  background-color: var(--bg-card);
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 12px;
+}
+
+.table input[type=text]:focus{
+  outline: none;
+}
+
+.table input[type=text]::placeholder{
+  color: rgba(255, 255, 255, 0.609);
+}
+
+.table input[type=checkbox]{
+  width: 2rem;
+}
+
+.activity_name{
+  width: 100%;
+}
+
+.node_canva{
+  width: 440px;
+  max-width: 440px;
+  min-width: 440px;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid red;
+  margin-top: -10px;
+  margin-left: -25px;
+}

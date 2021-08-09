@@ -1,7 +1,13 @@
 import React from 'react'
+import axios from 'axios'
 import {wrapper, table, top} from './styles.module.css'
 
-const ActivityTrackingDiagram2 = () => {
+const ActivityTrackingDiagram2 = async () => {
+	// const baseUrl = 'http://localhost:3001'
+	// const activities = await axios.get(`${baseUrl}/activity-tracking`).then((response) => {
+	// 	getSuppliers(response.data);
+	// });
+	// console.log('activities :>>', activities);
   return (
 		<div >
 			<table className={table}>
@@ -10,33 +16,28 @@ const ActivityTrackingDiagram2 = () => {
 					<th>No.</th>
 					<th>Activity</th>
 					<th>
-						<img src="../assets/images/triangle.png" alt="geometric shape" />
+						<img src="../assets/images/storage.png" alt="geometric shape" />
 					</th>
 					<th>
-						<img src="../assets/images/	.png" alt="geometric shape" />
+						<img src="../assets/images/operation.png" alt="geometric shape" />
 					</th>
 					<th>
-						<img src="../assets/images/arrow.png" alt="geometric shape" />
+						<img src="../assets/images/transportation.png" alt="geometric shape" />
 					</th>
 					<th>
-						<img src="../assets/images/diamond.png" alt="geometric shape" />
+						<img src="../assets/images/delay.png" alt="geometric shape" />
 					</th>
 					<th>
-						<img src="../assets/images/rectangle.png" alt="geometric shape" />
+						<img src="../assets/images/inspection.png" alt="geometric shape" />
+					</th>
+					<th>
+						<img src="../assets/images/combinedActivity.png" alt="geometric shape" />
 					</th>
 				</tr>
 				<tr>
 					<td>1</td>
 					<td>
-						<input
-							type="text"
-							placeholder="Enter activity name"
-							required
-							maxLength="50"
-							onBlur={(event) =>
-								event.target.value !== '' ? replaceInput(event.target) : null
-							}
-						/>
+						Acitvity name
 					</td>
 					<td>
 						<input type="checkbox"></input>
@@ -57,15 +58,7 @@ const ActivityTrackingDiagram2 = () => {
 				<tr>
 					<td>2</td>
 					<td>
-						<input
-							type="text"
-							placeholder="Enter activity name"
-							required
-							maxLength="50"
-							onBlur={(event) =>
-								event.target.value !== '' ? replaceInput(event.target) : null
-							}
-						/>
+						Acitvity name
 					</td>
 					<td>
 						<input type="checkbox"></input>
@@ -86,15 +79,7 @@ const ActivityTrackingDiagram2 = () => {
 				<tr>
 					<td>3</td>
 					<td>
-						<input
-							type="text"
-							placeholder="Enter activity name"
-							required
-							maxLength="50"
-							onBlur={(event) =>
-								event.target.value !== '' ? replaceInput(event.target) : null
-							}
-						/>
+						Acitvity name
 					</td>
 					<td>
 						<input type="checkbox"></input>
